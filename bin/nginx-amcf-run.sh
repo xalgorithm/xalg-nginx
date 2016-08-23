@@ -6,8 +6,7 @@ docker run -d \
     --name amcf \
     -e WEB_DOCUMENT_ROOT=/app/amcf \
     -e WEB_ALIAS_DOMAIN="*.amcf.org" \
-    -e VIRTUAL_HOST="amcf.org" \
-    -e VIRTUAL_HOST="www.amcf.org" \
+    -e VIRTUAL_HOST="*.amcf.org" \
     --restart=always \
     --volumes-from nginx-data \
     --env-file=env_file \

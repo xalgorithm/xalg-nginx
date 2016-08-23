@@ -6,8 +6,7 @@ docker run -d \
     --name xalg-im \
     -e WEB_DOCUMENT_ROOT=/app/xalg \
     -e WEB_ALIAS_DOMAIN="*.xalg.im" \
-    -e VIRTUAL_HOST="xalg.im" \
-    -e VIRTUAL_HOST="www.xalg.im" \
+    -e VIRTUAL_HOST="*.xalg.im" \
     --restart=always \
     --volumes-from nginx-data \
     --env-file=env_file \

@@ -6,8 +6,7 @@ docker run -d \
     --name westkingdomfaire \
     -e WEB_DOCUMENT_ROOT=/app/westkingdomfaire \
     -e WEB_ALIAS_DOMAIN="*.westkingdomfaire.org/" \
-    -e VIRTUAL_HOST="westkingdomfaire.org" \
-    -e VIRTUAL_HOST="www.westkingdomfaire.org" \
+    -e VIRTUAL_HOST="*.westkingdomfaire.org" \
     --restart=always \
     --volumes-from nginx-data \
     --env-file=env_file \

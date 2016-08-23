@@ -6,8 +6,7 @@ docker run -d \
     --name funky-penguin \
     -e WEB_DOCUMENT_ROOT=/app/funky-penguin \
     -e WEB_ALIAS_DOMAIN="*.funky-penguin.com" \
-    -e VIRTUAL_HOST="funky-penguin.com" \
-    -e VIRTUAL_HOST="www,funky-penguin.com" \
+    -e VIRTUAL_HOST="*.funky-penguin.com" \
     --restart=always \
     --volumes-from nginx-data \
     --env-file=env_file \
