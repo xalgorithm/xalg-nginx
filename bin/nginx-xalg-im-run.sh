@@ -11,6 +11,7 @@ docker run -d \
     --volumes-from nginx-data \
     --env-file=env_file \
     --link xalg-mysql \
+    --link memcache \
     -m 256m \
     -p 87:80 \
     -d xalg/nginx
