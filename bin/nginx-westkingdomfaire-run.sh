@@ -1,7 +1,7 @@
 docker stop westkingdomfaire 
 docker rm westkingdomfaire
-cd /opt/docker-files/ansible-docker-nginx/docker
-docker build -t xalg/nginx /opt/docker-files/ansible-docker-nginx/docker/
+cd /opt/docker/docker-nginx
+docker build -t xalg/nginx /opt/docker/docker-nginx
 docker run -d \
     --name westkingdomfaire \
     -e WEB_DOCUMENT_ROOT=/app/westkingdomfaire \

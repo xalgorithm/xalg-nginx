@@ -1,7 +1,7 @@
 docker stop xalg-im
 docker rm xalg-im
-cd /opt/xalg-nginx/docker
-docker build -t xalg/nginx /opt/xalg-nginx/docker/
+cd /opt/docker/docker-nginx
+docker build -t xalg/nginx /opt/docker/docker-nginx
 docker run -d \
     --name xalg-im \
     -e WEB_DOCUMENT_ROOT=/app/xalg \

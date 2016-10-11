@@ -1,7 +1,7 @@
 docker stop amcf 
 docker rm amcf
-cd /opt/docker
-docker build -t xalg/nginx /opt/docker/
+cd /opt/docker/docker-nginx
+docker build -t xalg/nginx /opt/docker/docker-nginx
 docker run -d \
     --name amcf \
     -e WEB_DOCUMENT_ROOT=/app/amcf \
