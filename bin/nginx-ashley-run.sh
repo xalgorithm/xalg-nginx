@@ -1,7 +1,7 @@
 docker stop ashley
 docker rm ashley
-cd opt/docker/docker-nginx
-docker build -t xalg/nginx opt/docker/docker-nginx
+cd /opt/docker/docker-nginx
+docker build -t xalg/nginx /opt/docker/docker-nginx
 docker run -d \
     --name ashley \
     -e WEB_DOCUMENT_ROOT=/app/ashley \
